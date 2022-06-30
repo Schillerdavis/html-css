@@ -5,7 +5,6 @@
 @font-face {
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype');
-}
 
 :root {
     --cor0: #c5ebd6;
@@ -22,10 +21,15 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 62.5%;
+
 }
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+}
+a.externo {
+    font-size: 1.6rem;
 }
 a.externo::after {
     content: '\1F517';
@@ -42,12 +46,12 @@ header > h1 {
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-weight: normal;
-    font-size: 3em;
+    font-size: 4.8rem;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
 }
 header > p {
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
+    font-size: 1.92rem;
     color: white;
     max-width: 550px;
     padding: 0px 10px 0px 10px;
@@ -62,7 +66,7 @@ nav {
 nav > a {
     color: var(--cor1);
     padding: 7px;
-    font-size: .8em;
+    font-size: 1.28rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -98,21 +102,21 @@ main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 2.88rem;
 }
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
-    font-size: 1.3em;
+    font-size: 2.08rem;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
-main p {
+main p, strong {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
-    font-size: 1em;
+    font-size: 1.6rem;
     line-height: 1.3em;
 }
 main strong {
@@ -158,24 +162,32 @@ aside h3 {
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
+    font-size: 1.6rem;
 }
 aside > ul {
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
-    font-size: .95em;
+    font-size: 1.52rem;
+}
+aside > ul > li {
+    font-size: 1.6rem;
+}
+aside ul li abbr {
+    font-size: 1.6rem;
 }
 footer {
     background-color: var(--cor5);
     color: white;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.6rem;
     padding: 5px;
 }
 footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
+    font-size: 1.6rem;
 }
 footer a:hover {
     color: var(--cor2);
